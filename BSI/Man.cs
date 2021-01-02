@@ -13,6 +13,16 @@ namespace BSI
             this.id = i;
         }
 
+        public int getID ()
+        {
+            return this.id;
+        }
+
+        public void setId(int newID) 
+        {
+            this.id = newID;
+        }
+
         public override string ToString()
         {
             return base.ToString() + " The person's ID is : " +   this.id.ToString();
