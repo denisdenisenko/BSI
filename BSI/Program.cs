@@ -21,7 +21,7 @@ namespace BSI
             Console.WriteLine(m1.ToString());
 
            // triangle();
-            //triangle2();
+            triangle2();
 
             Woman w2 = new Woman("2", "2", 2);
             Woman w3 = new Woman("3", "3", 2);
@@ -65,18 +65,17 @@ namespace BSI
         {
            
                 int val = 5;
-                int i, j, k;
-                for (i = 1; i <= val; i++)
+                int star = 5;
+                int i, k;
+                for (i = 1; i < val; i++)
                 {
-                    for (j = 1; j <= val - i; j++)
-                    {
-                        // Console.Write(" ");  
-                    }
-                    for (k = 1; k <= j; k++)
+                    for (k = 1; k < star; k++)
                     {
                         Console.Write("*");
                     }
                     Console.WriteLine("");
+                star--;
+                     
                 }
                 Console.ReadLine();
             
