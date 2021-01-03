@@ -27,5 +27,15 @@ namespace BSI
         {
             return base.ToString() + " The person's ID is : " +   this.id.ToString();
         }
+
+        public override bool Equals(object obj)
+
+        {
+            if (!(obj is Man))
+            {
+                return false;
+            }
+            return base.Equals(obj) && this.id == ((Man)obj).id;
+        }
     }
 }

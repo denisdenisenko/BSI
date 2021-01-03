@@ -20,7 +20,12 @@ namespace BSI
         }*/
 
         public override bool Equals(object obj)
+
         {
+            if (!(obj is Woman)) 
+            {
+                return false;
+            }
             return base.Equals(obj)  && this.id == ((Woman)obj).id;
         }
     }

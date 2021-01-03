@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BSI
 {
-    class Singletone
+    public sealed class Singletone
     {
         private static Singletone instance;
 

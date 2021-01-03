@@ -22,7 +22,11 @@ namespace BSI
 
         public override bool Equals(object obj)
         {
-            return this.name == ((Person)obj).name && this.lastName == ((Person)obj).lastName;
+            if (obj == null)
+            {
+                return false;
+            }
+                return this.name == ((Person)obj).name && this.lastName == ((Person)obj).lastName;
         }
     }
 }

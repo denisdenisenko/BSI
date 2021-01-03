@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
 
 namespace BSI
@@ -26,6 +27,23 @@ namespace BSI
             Woman w3 = new Woman("3", "3", 2);
 
             Console.WriteLine(w2.Equals(w3));
+            ArrayList arr = new ArrayList();
+            arr.Add(w1);
+            arr.Add(m1);
+            arr.Add(w3);
+            arr.Add(w2);
+
+            foreach (Person p in arr) 
+            {
+                if (p.Equals(w2)) 
+                {
+                    Console.WriteLine("Yes");
+                }
+                else 
+                {
+                    Console.WriteLine("No");
+                }
+            }
 
 
 
