@@ -79,7 +79,7 @@ namespace BSI
                 }
                 Console.ReadLine();
             
-
+            //new triangle
         }
     }
 }
