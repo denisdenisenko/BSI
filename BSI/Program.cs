@@ -19,8 +19,15 @@ namespace BSI
             Console.WriteLine(w1.ToString());
             Console.WriteLine(m1.ToString());
 
-            triangle();
-            triangle2();
+           // triangle();
+            //triangle2();
+
+            Woman w2 = new Woman("2", "2", 2);
+            Woman w3 = new Woman("3", "3", 2);
+
+            Console.WriteLine(w2.Equals(w3));
+
+
 
         }
 

@@ -19,5 +19,10 @@ namespace BSI
         {
             return "The person's name is : " + this.name.ToString() + " " +  "The person's Last Name is : " + this.lastName.ToString();
         }
+
+        public override bool Equals(object obj)
+        {
+            return this.name == ((Person)obj).name && this.lastName == ((Person)obj).lastName;
+        }
     }
 }

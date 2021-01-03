@@ -13,5 +13,15 @@ namespace BSI
             
             this.id = i;
         }
+
+        /*public override bool Equals(object obj)
+        {
+            return this.id == ((Woman)obj).id;
+        }*/
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj)  && this.id == ((Woman)obj).id;
+        }
     }
 }
